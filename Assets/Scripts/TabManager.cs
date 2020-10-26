@@ -3,28 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProfileManager : MonoBehaviour
+public class TabManager : MonoBehaviour
 {
 
-    [SerializeField] GameObject[] profiles;
-    [SerializeField] GameObject tabObject;
-    [SerializeField] Color disabledTabColor;
+    [SerializeField] GameObject[] contents;
+    [SerializeField] GameObject tabObject = null;
+    [SerializeField] Color disabledTabColor = Color.white;
 
     Color activeTabColor;
     Image[] tabs;
 
-    int currentlySelectedProfile;
+    int currentlySelectedTab;
 
     // Start is called before the first frame update
     void Start()
     {
-        currentlySelectedProfile = 0;
+        currentlySelectedTab = 0;
 
-        tabs = new Image[profiles.Length];
+        tabs = new Image[contents.Length];
         tabs[0] = tabObject.GetComponent<Image>();
         activeTabColor = tabs[0].color;
 
-        for (int i=1; i<profiles.Length; i++)
+        for (int i=1; i<contents.Length; i++)
         {
             GameObject newTab = Instantiate(tabObject, tabObject.transform.parent);
             newTab.GetComponent<Image>().color = disabledTabColor;
@@ -34,18 +34,28 @@ public class ProfileManager : MonoBehaviour
         }
     }
 
+    public int getCurrentlySelectedTab()
+    {
+        return currentlySelectedTab;
+    }
+    public GameObject getCurrentlySelectedContent()
+    {
+        return contents[currentlySelectedTab];
+    }
+
     public void clickTab(int index)
     {
-        for (int i=0; i<profiles.Length; i++)
+        currentlySelectedTab = index;
+        for (int i=0; i<contents.Length; i++)
         {
             if (i == index)
             {
-                profiles[i].SetActive(true);
+                contents[i].SetActive(true);
                 tabs[i].color = activeTabColor;
             }
             else
             {
-                profiles[i].SetActive(false);
+                contents[i].SetActive(false);
                 tabs[i].color = disabledTabColor;
             }
         }
