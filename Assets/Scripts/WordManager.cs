@@ -3,11 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
+
+[System.Serializable]
+public class WordObject{
+    public string word;
+    public WordType type;
+}
 
 public class WordManager : MonoBehaviour
 {
     [SerializeField] GameObject dragHolder;
     [SerializeField] GameObject listHolder;
+
+    [Space(20)]
+    [SerializeField] Color[] typeColor;
+
+    [Space(20)]
+    [SerializeField] GameObject wordPrefab;
+    [SerializeField] WordObject[] words;
 
     GameObject originalParent = null;
     GameObject currentlyHolding = null;
@@ -21,6 +35,13 @@ public class WordManager : MonoBehaviour
     {
         m_Raycaster = GetComponent<GraphicRaycaster>();
         m_EventSystem = GetComponent<EventSystem>();
+
+        for (int i=0; i<words.Length; i++)
+        {
+            GameObject newWord = Instantiate(wordPrefab, listHolder.transform);
+            newWord.GetComponent<TextMeshProUGUI>().text = words[i].word;
+            newWord.GetComponent<TextMeshProUGUI>().color = typeColor[(int)words[i].type];
+        }
     }
 
     // Update is called once per frame
