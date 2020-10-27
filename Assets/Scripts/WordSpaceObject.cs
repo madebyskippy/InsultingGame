@@ -6,8 +6,7 @@ public enum WordType { noun, adjective, verb};
 
 public class WordSpaceObject : MonoBehaviour
 {
-
-    [SerializeField] WordType type;
+    [SerializeField] WordType type = WordType.noun;
 
     public WordType getType()
     {

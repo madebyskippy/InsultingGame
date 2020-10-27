@@ -9,19 +9,20 @@ using TMPro;
 public class WordObject{
     public string word;
     public WordType type;
+    public Tags[] tags;
 }
 
 public class WordManager : MonoBehaviour
 {
-    [SerializeField] GameObject dragHolder;
-    [SerializeField] GameObject listHolder;
+    [SerializeField] GameObject dragHolder = null;
+    [SerializeField] GameObject listHolder = null;
 
     [Space(20)]
-    [SerializeField] Color[] typeColor;
+    [SerializeField] Color[] typeColor = null;
 
     [Space(20)]
-    [SerializeField] GameObject wordPrefab;
-    [SerializeField] WordObject[] words;
+    [SerializeField] GameObject wordPrefab = null;
+    [SerializeField] WordObject[] words = null;
 
     GameObject originalParent = null;
     GameObject currentlyHolding = null;
@@ -40,7 +41,9 @@ public class WordManager : MonoBehaviour
         {
             GameObject newWord = Instantiate(wordPrefab, listHolder.transform);
             newWord.GetComponent<TextMeshProUGUI>().text = words[i].word;
+            newWord.name = words[i].word;
             newWord.GetComponent<TextMeshProUGUI>().color = typeColor[(int)words[i].type];
+            newWord.GetComponent<TaggedObject>().setTags(words[i].tags);
         }
     }
 

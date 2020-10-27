@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TabManager : MonoBehaviour
 {
 
-    [SerializeField] GameObject[] contents;
+    [SerializeField] GameObject[] contents = null;
     [SerializeField] GameObject tabObject = null;
     [SerializeField] Color disabledTabColor = Color.white;
 
@@ -23,6 +23,7 @@ public class TabManager : MonoBehaviour
         tabs = new Image[contents.Length];
         tabs[0] = tabObject.GetComponent<Image>();
         activeTabColor = tabs[0].color;
+        contents[0].SetActive(true);
 
         for (int i=1; i<contents.Length; i++)
         {
@@ -31,6 +32,7 @@ public class TabManager : MonoBehaviour
             int index = i;
             newTab.GetComponent<Button>().onClick.AddListener(() => { clickTab(index); });
             tabs[i] = newTab.GetComponent<Image>();
+            contents[i].SetActive(false);
         }
     }
 
