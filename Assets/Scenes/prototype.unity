@@ -494,7 +494,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 576198494}
   m_HandleRect: {fileID: 576198493}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -815,7 +815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260, y: -173}
+  m_AnchoredPosition: {x: 64, y: 22}
   m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401257979
@@ -924,12 +924,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dear Player,\n\nGreetings! Felicitations from the Insulting Department.
-    You are the 956738th ----------  citizen who has forgotten a little something
-    called TAXES. This is no surprise to us, since you\u2019re ---------- . I\u2019ve
-    got news for you--the only things that are certain are ----------  and taxes.
-    We recommend you to pay your taxes immediately. If not, we\u2019d have to call
-    upon \n---------- to ---------- .\n\n---------- regards,\nThe Insulting Department\n"
+  m_text: "Dear ---------- ,\n\nIt occurred to us that you still haven\u2019t paid
+    your taxes. Why don\u2019t you put\n---------   aside and fulfill your duty towards
+    your country. If you don\u2019t do that, we\u2019d have to call upon ---------   
+    to ---------   and ---------   .\n\nBest,\nThe Tax-Collection Department\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63e51741653b447be9dd5c24a8ca9426, type: 2}
   m_sharedMaterial: {fileID: 2842810499220168459, guid: 63e51741653b447be9dd5c24a8ca9426,
@@ -1343,7 +1341,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -191, y: -53}
+  m_AnchoredPosition: {x: -204, y: 25}
   m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611190930
@@ -1754,13 +1752,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dear Player \n(this is an example second letter)\nGreetings! Felicitations
-    from the Insulting Department. You are the 956738th ----------  citizen who has
-    forgotten a little something called TAXES. This is no surprise to us, since you\u2019re
-    ---------- . I\u2019ve got news for you--the only things that are certain are
-    ----------  and taxes. We recommend you to pay your taxes immediately. If not,
-    we\u2019d have to call upon \n---------- to ---------- .\n\n---------- regards,\nThe
-    Insulting Department\n"
+  m_text: "Dear Player \n\nGreetings! Felicitations from the Insulting Department.
+    You are the 956738th ----------  citizen who has forgotten a little something
+    called TAXES. This is no surprise to us, since you\u2019re ---------- . I\u2019ve
+    got news for you--the only things that are certain are ----------  and taxes.
+    We recommend you to pay your taxes immediately. If not, we\u2019d have to call
+    upon \n---------- to ---------- .\n\n---------- regards,\nThe Insulting Department\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63e51741653b447be9dd5c24a8ca9426, type: 2}
   m_sharedMaterial: {fileID: 2842810499220168459, guid: 63e51741653b447be9dd5c24a8ca9426,
@@ -1895,14 +1892,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mrs. Salvacion Profile
+  m_text: 'Mrs. Salvacion
 
 
-    As a member of congress, Mrs. Salvacion is
-    unusually rich and hopelessly materialistic. Her guilty pleasures includes rom-coms,
-    comic books, and a pet whom she loves more than her own children. She absolutely
-    loathes damp socks. Or anything footwear related that has excessive moisture
-    in them.       '
+    As a member of congress, Mrs. Salvacion is unusually
+    rich and hopelessly materialistic. Her guilty pleasures includes rom-coms, comic
+    books, and a pet whom she loves more than her own children. She absolutely loathes
+    damp socks. Or anything footwear related that has excessive moisture in them.       '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63e51741653b447be9dd5c24a8ca9426, type: 2}
   m_sharedMaterial: {fileID: 2842810499220168459, guid: 63e51741653b447be9dd5c24a8ca9426,
@@ -1992,7 +1988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2cc59324f4f46c5bbec4fedb95275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allTags: 00000000
+  allTags: 00000000030000000700000005000000
 --- !u!1 &656407275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,7 +2089,7 @@ GameObject:
   - component: {fileID: 718076099}
   - component: {fileID: 718076100}
   m_Layer: 5
-  m_Name: letter
+  m_Name: letter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2143,7 +2139,6 @@ MonoBehaviour:
   - {fileID: 611190930}
   - {fileID: 401257979}
   - {fileID: 1798954085}
-  - {fileID: 1090886227}
 --- !u!1 &733133507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,7 +2383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136, y: 25}
+  m_AnchoredPosition: {x: 229, y: 68}
   m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893424469
@@ -2608,7 +2603,7 @@ MonoBehaviour:
     tags: 00000000
   - word: cancel your birth certificate
     type: 2
-    tags: 00000000
+    tags: 09000000
   - word: cat covering crap
     type: 0
     tags: 00000000
@@ -2617,37 +2612,37 @@ MonoBehaviour:
     tags: 
   - word: the very expensive phone
     type: 0
-    tags: 00000000
+    tags: 0000000008000000
   - word: einstein
     type: 0
-    tags: 00000000
+    tags: 09000000
   - word: wrinkly as a pickle
     type: 1
-    tags: 00000000
+    tags: 0200000001000000
   - word: chewed up and spit out
     type: 1
-    tags: 00000000
+    tags: 0100000008000000
   - word: bitching
     type: 2
-    tags: 00000000
+    tags: 0b000000
   - word: squeeze your lemon
     type: 2
-    tags: 00000000
+    tags: 02000000
   - word: deconstruct your fake nose
     type: 2
-    tags: 00000000
+    tags: 0100000008000000
   - word: OK looking
     type: 1
-    tags: 00000000
+    tags: 0100000008000000
   - word: the Morning Show
     type: 0
-    tags: 00000000
+    tags: 06000000
   - word: dill your pickle
     type: 2
-    tags: 00000000
+    tags: 02000000
   - word: butter your butt and lick it
     type: 2
-    tags: 00000000
+    tags: 02000000
   - word: scratchy
     type: 1
     tags: 00000000
@@ -2657,6 +2652,21 @@ MonoBehaviour:
   - word: desire for cheesy romance
     type: 0
     tags: 00000000
+  - word: whoreo
+    type: 0
+    tags: 0a0000000b000000
+  - word: illegal breed
+    type: 0
+    tags: 0900000001000000
+  - word: assholian
+    type: 1
+    tags: 0b00000008000000
+  - word: Bollywood
+    type: 0
+    tags: 0600000008000000
+  - word: shortage of brain
+    type: 0
+    tags: 0b00000005000000
 --- !u!1 &1005870589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,7 +2903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1090886226
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4318,7 +4328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2cc59324f4f46c5bbec4fedb95275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allTags: 01000000
+  allTags: 02000000010000000600000008000000
 --- !u!1 &1798954083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4355,7 +4365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: -173}
+  m_AnchoredPosition: {x: -168, y: 301}
   m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1798954085
@@ -4652,7 +4662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 142}
+  m_AnchoredPosition: {x: -255, y: 142}
   m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976677803
@@ -5185,7 +5195,7 @@ GameObject:
   - component: {fileID: 2111746161}
   - component: {fileID: 2111746162}
   m_Layer: 5
-  m_Name: letter (1)
+  m_Name: letter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
